@@ -1,230 +1,230 @@
 {
-   "Apples": {
-      "emission": 0.43,
-      "land_use": 0.63,
-      "water_use": 180.1,
-      "water_pollution": 1.45
-   },
-   "Bananas": {
-      "emission": 0.86,
-      "land_use": 1.93,
-      "water_use": 114.5,
-      "water_pollution": 3.29
-   },
-   "Barley": {
-      "emission": 1.18,
-      "land_use": 1.11,
-      "water_use": 17.1,
-      "water_pollution": 2.33
-   },
-   "Beef (beef herd)": {
-      "emission": 99.48,
-      "land_use": 326.21,
-      "water_use": 1451.2,
-      "water_pollution": 301.41
-   },
-   "Beef (dairy herd)": {
-      "emission": 33.3,
-      "land_use": 43.24,
-      "water_use": 2714.3,
-      "water_pollution": 365.29
-   },
-   "Beet Sugar": {
-      "emission": 1.81,
-      "land_use": 1.83,
-      "water_use": 217.7,
-      "water_pollution": 5.41
-   },
-   "Berries & Grapes": {
-      "emission": 1.53,
-      "land_use": 2.41,
-      "water_use": 419.6,
-      "water_pollution": 6.12
-   },
-   "Brassicas": {
-      "emission": 0.51,
-      "land_use": 0.55,
-      "water_use": 119.4,
-      "water_pollution": 5.01
-   },
-   "Cane Sugar": {
-      "emission": 3.2,
-      "land_use": 2.04,
-      "water_use": 620.1,
-      "water_pollution": 16.92
-   },
-   "Cassava": {
-      "emission": 1.32,
-      "land_use": 1.81,
-      "water_use": 0,
-      "water_pollution": 0.69
-   },
-   "Cheese": {
-      "emission": 23.88,
-      "land_use": 87.79,
-      "water_use": 5605.2,
-      "water_pollution": 98.37
-   },
-   "Citrus Fruit": {
-      "emission": 0.39,
-      "land_use": 0.86,
-      "water_use": 82.7,
-      "water_pollution": 2.24
-   },
-   "Coffee": {
-      "emission": 28.53,
-      "land_use": 21.62,
-      "water_use": 25.9,
-      "water_pollution": 110.52
-   },
-   "Dark Chocolate": {
-      "emission": 46.65,
-      "land_use": 68.96,
-      "water_use": 540.6,
-      "water_pollution": 87.08
-   },
-   "Eggs": {
-      "emission": 4.67,
-      "land_use": 6.27,
-      "water_use": 577.7,
-      "water_pollution": 21.76
-   },
-   "Fish (farmed)": {
-      "emission": 13.63,
-      "land_use": 8.41,
-      "water_use": 3691.3,
-      "water_pollution": 235.12
-   },
-   "Groundnuts": {
-      "emission": 3.23,
-      "land_use": 9.11,
-      "water_use": 1852.3,
-      "water_pollution": 14.14
-   },
-   "Lamb & Mutton": {
-      "emission": 39.72,
-      "land_use": 369.81,
-      "water_use": 1802.8,
-      "water_pollution": 97.13
-   },
-   "Maize": {
-      "emission": 1.7,
-      "land_use": 2.94,
-      "water_use": 215.7,
-      "water_pollution": 4.03
-   },
-   "Milk": {
-      "emission": 3.15,
-      "land_use": 8.95,
-      "water_use": 628.2,
-      "water_pollution": 10.65
-   },
-   "Nuts": {
-      "emission": 0.43,
-      "land_use": 12.96,
-      "water_use": 4133.8,
-      "water_pollution": 19.15
-   },
-   "Oatmeal": {
-      "emission": 2.48,
-      "land_use": 7.6,
-      "water_use": 482.4,
-      "water_pollution": 11.23
-   },
-   "Onions & Leeks": {
-      "emission": 0.5,
-      "land_use": 0.39,
-      "water_use": 14.3,
-      "water_pollution": 3.24
-   },
-   "Other Fruit": {
-      "emission": 1.05,
-      "land_use": 0.89,
-      "water_use": 153.5,
-      "water_pollution": 2.43
-   },
-   "Other Pulses": {
-      "emission": 1.79,
-      "land_use": 15.57,
-      "water_use": 435.7,
-      "water_pollution": 17.08
-   },
-   "Other Vegetables": {
-      "emission": 0.53,
-      "land_use": 0.38,
-      "water_use": 102.5,
-      "water_pollution": 2.27
-   },
-   "Peas": {
-      "emission": 0.98,
-      "land_use": 7.46,
-      "water_use": 396.6,
-      "water_pollution": 7.52
-   },
-   "Pig Meat": {
-      "emission": 12.31,
-      "land_use": 17.36,
-      "water_use": 1795.8,
-      "water_pollution": 76.38
-   },
-   "Potatoes": {
-      "emission": 0.46,
-      "land_use": 0.88,
-      "water_use": 59.1,
-      "water_pollution": 3.48
-   },
-   "Poultry Meat": {
-      "emission": 9.87,
-      "land_use": 12.22,
-      "water_use": 660,
-      "water_pollution": 48.7
-   },
-   "Prawns (farmed)": {
-      "emission": 26.87,
-      "land_use": 2.97,
-      "water_use": 3515.4,
-      "water_pollution": 227.22
-   },
-   "Rice": {
-      "emission": 4.45,
-      "land_use": 2.8,
-      "water_use": 2248.4,
-      "water_pollution": 35.07
-   },
-   "Root Vegetables": {
-      "emission": 0.43,
-      "land_use": 0.33,
-      "water_use": 28.4,
-      "water_pollution": 1.61
-   },
-   "Soymilk": {
-      "emission": 0.98,
-      "land_use": 0.66,
-      "water_use": 27.8,
-      "water_pollution": 1.06
-   },
-   "Tofu (soybeans)": {
-      "emission": 3.16,
-      "land_use": 3.52,
-      "water_use": 148.6,
-      "water_pollution": 6.16
-   },
-   "Tomatoes": {
-      "emission": 2.09,
-      "land_use": 0.8,
-      "water_use": 369.8,
-      "water_pollution": 7.51
-   },
-   "Wheat & Rye": {
-      "emission": 1.57,
-      "land_use": 3.85,
-      "water_use": 647.5,
-      "water_pollution": 7.16
-   },
-   "Wine": {
-      "emission": 1.79,
-      "land_use": 1.78,
-      "water_use": 78.9,
-      "water_pollution": 4.57
-   }
+  "Apples": {
+    "emission": 0.43,
+    "land_use": 0.63,
+    "water_use": 180.1,
+    "water_pollution": 1.45
+  },
+  "Bananas": {
+    "emission": 0.86,
+    "land_use": 1.93,
+    "water_use": 114.5,
+    "water_pollution": 3.29
+  },
+  "Barley": {
+    "emission": 1.18,
+    "land_use": 1.11,
+    "water_use": 17.1,
+    "water_pollution": 2.33
+  },
+  "Beef (beef herd)": {
+    "emission": 99.48,
+    "land_use": 326.21,
+    "water_use": 1451.2,
+    "water_pollution": 301.41
+  },
+  "Beef (dairy herd)": {
+    "emission": 33.3,
+    "land_use": 43.24,
+    "water_use": 2714.3,
+    "water_pollution": 365.29
+  },
+  "Beet Sugar": {
+    "emission": 1.81,
+    "land_use": 1.83,
+    "water_use": 217.7,
+    "water_pollution": 5.41
+  },
+  "Berries & Grapes": {
+    "emission": 1.53,
+    "land_use": 2.41,
+    "water_use": 419.6,
+    "water_pollution": 6.12
+  },
+  "Brassicas": {
+    "emission": 0.51,
+    "land_use": 0.55,
+    "water_use": 119.4,
+    "water_pollution": 5.01
+  },
+  "Cane Sugar": {
+    "emission": 3.2,
+    "land_use": 2.04,
+    "water_use": 620.1,
+    "water_pollution": 16.92
+  },
+  "Cassava": {
+    "emission": 1.32,
+    "land_use": 1.81,
+    "water_use": 0,
+    "water_pollution": 0.69
+  },
+  "Cheese": {
+    "emission": 23.88,
+    "land_use": 87.79,
+    "water_use": 5605.2,
+    "water_pollution": 98.37
+  },
+  "Citrus Fruit": {
+    "emission": 0.39,
+    "land_use": 0.86,
+    "water_use": 82.7,
+    "water_pollution": 2.24
+  },
+  "Coffee": {
+    "emission": 28.53,
+    "land_use": 21.62,
+    "water_use": 25.9,
+    "water_pollution": 110.52
+  },
+  "Dark Chocolate": {
+    "emission": 46.65,
+    "land_use": 68.96,
+    "water_use": 540.6,
+    "water_pollution": 87.08
+  },
+  "Eggs": {
+    "emission": 4.67,
+    "land_use": 6.27,
+    "water_use": 577.7,
+    "water_pollution": 21.76
+  },
+  "Fish (farmed)": {
+    "emission": 13.63,
+    "land_use": 8.41,
+    "water_use": 3691.3,
+    "water_pollution": 235.12
+  },
+  "Groundnuts": {
+    "emission": 3.23,
+    "land_use": 9.11,
+    "water_use": 1852.3,
+    "water_pollution": 14.14
+  },
+  "Lamb & Mutton": {
+    "emission": 39.72,
+    "land_use": 369.81,
+    "water_use": 1802.8,
+    "water_pollution": 97.13
+  },
+  "Maize": {
+    "emission": 1.7,
+    "land_use": 2.94,
+    "water_use": 215.7,
+    "water_pollution": 4.03
+  },
+  "Milk": {
+    "emission": 3.15,
+    "land_use": 8.95,
+    "water_use": 628.2,
+    "water_pollution": 10.65
+  },
+  "Nuts": {
+    "emission": 0.43,
+    "land_use": 12.96,
+    "water_use": 4133.8,
+    "water_pollution": 19.15
+  },
+  "Oatmeal": {
+    "emission": 2.48,
+    "land_use": 7.6,
+    "water_use": 482.4,
+    "water_pollution": 11.23
+  },
+  "Onions & Leeks": {
+    "emission": 0.5,
+    "land_use": 0.39,
+    "water_use": 14.3,
+    "water_pollution": 3.24
+  },
+  "Other Fruit": {
+    "emission": 1.05,
+    "land_use": 0.89,
+    "water_use": 153.5,
+    "water_pollution": 2.43
+  },
+  "Other Pulses": {
+    "emission": 1.79,
+    "land_use": 15.57,
+    "water_use": 435.7,
+    "water_pollution": 17.08
+  },
+  "Other Vegetables": {
+    "emission": 0.53,
+    "land_use": 0.38,
+    "water_use": 102.5,
+    "water_pollution": 2.27
+  },
+  "Peas": {
+    "emission": 0.98,
+    "land_use": 7.46,
+    "water_use": 396.6,
+    "water_pollution": 7.52
+  },
+  "Pig Meat": {
+    "emission": 12.31,
+    "land_use": 17.36,
+    "water_use": 1795.8,
+    "water_pollution": 76.38
+  },
+  "Potatoes": {
+    "emission": 0.46,
+    "land_use": 0.88,
+    "water_use": 59.1,
+    "water_pollution": 3.48
+  },
+  "Poultry Meat": {
+    "emission": 9.87,
+    "land_use": 12.22,
+    "water_use": 660,
+    "water_pollution": 48.7
+  },
+  "Prawns (farmed)": {
+    "emission": 26.87,
+    "land_use": 2.97,
+    "water_use": 3515.4,
+    "water_pollution": 227.22
+  },
+  "Rice": {
+    "emission": 4.45,
+    "land_use": 2.8,
+    "water_use": 2248.4,
+    "water_pollution": 35.07
+  },
+  "Root Vegetables": {
+    "emission": 0.43,
+    "land_use": 0.33,
+    "water_use": 28.4,
+    "water_pollution": 1.61
+  },
+  "Soymilk": {
+    "emission": 0.98,
+    "land_use": 0.66,
+    "water_use": 27.8,
+    "water_pollution": 1.06
+  },
+  "Tofu (soybeans)": {
+    "emission": 3.16,
+    "land_use": 3.52,
+    "water_use": 148.6,
+    "water_pollution": 6.16
+  },
+  "Tomatoes": {
+    "emission": 2.09,
+    "land_use": 0.8,
+    "water_use": 369.8,
+    "water_pollution": 7.51
+  },
+  "Wheat & Rye": {
+    "emission": 1.57,
+    "land_use": 3.85,
+    "water_use": 647.5,
+    "water_pollution": 7.16
+  },
+  "Wine": {
+    "emission": 1.79,
+    "land_use": 1.78,
+    "water_use": 78.9,
+    "water_pollution": 4.57
+  }
 }

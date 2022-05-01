@@ -8,16 +8,44 @@ import {
   FormLabel,
   Button,
   HStack,
+  Flex,
 } from '@chakra-ui/react';
 import { Field, Form, Formik } from 'formik';
 
 import { useState } from 'react';
+import { NavigationType } from 'react-router-dom';
 import Navbar from './components/navbar';
 
 export const App = () => {
   const [recipe, setRecipe] = useState({});
   const [title, setTitle] = useState('');
   const [submit, setSubmit] = useState(false);
+
+  const computeSum = (recipe) => {
+    let emission = 0;
+    let land_use = 0;
+    let water_use = 0;
+    Object.keys(recipe).map((keys) => (emission += recipe[keys].emission));
+    Object.keys(recipe).map((keys) => (land_use += recipe[keys].land_use));
+    Object.keys(recipe).map((keys) => (water_use += recipe[keys].water_use));
+
+    return [emission.toFixed(2), land_use.toFixed(2), water_use.toFixed(2)];
+  };
+
+  const renderResults = (keys, recipe) => {
+    return (
+      <VStack>
+        <Text as='kbd'>{keys} (per kg)</Text>
+        <HStack spacing={5}>
+          <Text>{recipe.emission} kgCO₂eq</Text>
+          <Text color='grey.500'>|</Text>
+          <Text>{recipe.land_use} m²</Text>
+          <Text color='grey.500'>|</Text>
+          <Text>{recipe.water_use} liters</Text>
+        </HStack>
+      </VStack>
+    );
+  };
 
   function validateUrl(value) {
     let error;
@@ -91,12 +119,52 @@ export const App = () => {
             )}
           </Formik>
           {Object.keys(recipe).length !== 0 ? (
-            <>
-              <Text fontSize='3xl'>{title}</Text>
-              {Object.keys(recipe).map((keys) => (
-                <Text>{`${recipe[keys].emission} kg of CO2 per kg of ${keys} `}</Text>
-              ))}
-            </>
+            <VStack spacing={10} bg='black' borderRadius='3rem' p={10}>
+              <Text fontSize='3xl' as='u'>
+                {title}
+              </Text>
+              {Object.keys(recipe).map((keys) =>
+                renderResults(keys, recipe[keys])
+              )}
+              <Box>
+                <Text>
+                  Total Emission{' '}
+                  <Text
+                    as={'span'}
+                    color={
+                      computeSum(recipe)[0] > 100 ? 'red.400' : 'green.400'
+                    }
+                  >
+                    {computeSum(recipe)[0]}
+                  </Text>{' '}
+                  kgCO₂eq
+                </Text>
+                <Text>
+                  Total land use{' '}
+                  <Text
+                    as={'span'}
+                    color={
+                      computeSum(recipe)[1] > 300 ? 'red.400' : 'green.400'
+                    }
+                  >
+                    {computeSum(recipe)[1]}
+                  </Text>{' '}
+                  m²
+                </Text>
+                <Text>
+                  Total water use{' '}
+                  <Text
+                    as={'span'}
+                    color={
+                      computeSum(recipe)[2] > 3700 ? 'red.400' : 'green.400'
+                    }
+                  >
+                    {computeSum(recipe)[2]}
+                  </Text>{' '}
+                  liters
+                </Text>
+              </Box>
+            </VStack>
           ) : (
             submit && <Text>No matching ingredients found :(</Text>
           )}

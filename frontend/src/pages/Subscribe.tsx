@@ -26,7 +26,7 @@ function Subscribe() {
   }
 
   async function subscribe(Phone: string) {
-    const endpoint = `http://localhost:8000/subscribe?phone=${Phone}`;
+    const endpoint = `https://recipeapi-kg5pwkenoq-uc.a.run.app/subscribe?phone=${Phone}`;
     try {
       const res = await fetch(endpoint, {
         method: 'POST',

@@ -2,6 +2,8 @@ import * as React from 'react';
 import ReactDOM from 'react-dom';
 import { App } from './App';
 
+import { ColorModeScript } from '@chakra-ui/react';
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Subscribe from './pages/Subscribe';
 import Landing from './pages/Landing';
@@ -11,6 +13,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 
 ReactDOM.render(
   <ChakraProvider theme={theme}>
+    <ColorModeScript initialColorMode={theme.config.initialColorMode} />
     <React.StrictMode>
       <BrowserRouter>
         <Routes>

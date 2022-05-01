@@ -28,12 +28,11 @@ function Subscribe() {
   async function subscribe(Phone: string) {
     const endpoint = `https://recipeapi-kg5pwkenoq-uc.a.run.app/subscribe?phone=${Phone}`;
     try {
-      const res = await fetch(endpoint, {
-        method: 'POST',
+      await fetch(endpoint, {
+        headers: {
+          mode: 'no-cors', // no-cors, *cors, same-origin
+        },
       });
-
-      const data = await res.json();
-      console.log(data);
     } catch (e) {
       alert(e);
     }

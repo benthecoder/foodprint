@@ -54,7 +54,7 @@ export const App = () => {
       <Navbar />
       <Box textAlign='center' fontSize='xl'>
         <VStack spacing={8} p={100}>
-          <Text fontSize='6xl'>🌱 Which Recipe is Greener? 🍜</Text>
+          <Text fontSize='6xl'>🌱 How Green is the Recipe? 🍜</Text>
           <Formik
             initialValues={{
               url: 'https://www.foodnetwork.com/recipes/bulgogi-korean-barbecued-beef-recipe-1925970',

@@ -4,7 +4,6 @@ import {
   Text,
   VStack,
   Grid,
-  theme,
   Input,
   FormControl,
   FormErrorMessage,
@@ -12,6 +11,7 @@ import {
   Button,
 } from '@chakra-ui/react';
 import { Field, Form, Formik } from 'formik';
+import theme from './theme';
 
 export const App = () => {
   function validateUrl(value: string) {

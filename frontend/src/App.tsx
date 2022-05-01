@@ -8,40 +8,74 @@ import {
   Input,
   FormControl,
   FormErrorMessage,
-  FormHelperText,
   FormLabel,
+  Button,
 } from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { useState } from 'react';
+import { Field, Form, Formik } from 'formik';
 
 export const App = () => {
-  const [input, setInput] = useState('');
-  const handleInputChange = (e: any) => setInput(e.target.value);
-  const isError = input === '';
+  function validateUrl(value: string) {
+    let error;
+    if (!value) {
+      error = 'URL is required';
+    } else if (!value.startsWith('http') && !value.endsWith('.com')) {
+      error = 'Not a URL';
+    }
+    return error;
+  }
+
+  let isLoading = true;
+
+  async function scrapeRecipes(query: string) {
+    const endpoint = `127.0.0.1:8000/scrape?url=${query}`;
+    try {
+      const res = await fetch(endpoint);
+      const data = await res.json();
+      console.log(data);
+    } catch (e) {
+      alert('An error occured!');
+    }
+    isLoading = false;
+  }
 
   return (
     <ChakraProvider theme={theme}>
       <Box textAlign='center' fontSize='xl'>
         <Grid minH='100vh' p={3}>
-          <ColorModeSwitcher justifySelf='flex-end' />
-          <VStack spacing={8} px={100}>
-            <Text fontSize='6xl'>🌱 Green Recipes</Text>
-            <Text>Insert a recipe url below</Text>
-            <FormControl isInvalid={isError}>
-              <FormLabel htmlFor='url'>URL</FormLabel>
-              <Input
-                id='url'
-                type='url'
-                value={input}
-                onChange={handleInputChange}
-              />
-              {!isError ? (
-                <FormHelperText>Enter a reciple url</FormHelperText>
-              ) : (
-                <FormErrorMessage>url is required.</FormErrorMessage>
+          <VStack spacing={8} p={100}>
+            <Text fontSize='6xl'>🌱 Green Recipes 🍜</Text>
+            <Formik
+              initialValues={{
+                url: 'https://www.foodnetwork.com/recipes/bulgogi-korean-barbecued-beef-recipe-1925970',
+              }}
+              onSubmit={(values) => {
+                scrapeRecipes(values.url);
+              }}
+            >
+              {(props) => (
+                <Form>
+                  <Field name='url' validate={validateUrl}>
+                    {({ field, form }: any) => (
+                      <FormControl
+                        isInvalid={form.errors.url && form.touched.url}
+                      >
+                        <FormLabel htmlFor='url'>Recipe URL</FormLabel>
+                        <Input {...field} id='url' placeholder='url' />
+                        <FormErrorMessage>{form.errors.url}</FormErrorMessage>
+                      </FormControl>
+                    )}
+                  </Field>
+                  <Button
+                    mt={4}
+                    colorScheme='teal'
+                    isLoading={props.isSubmitting}
+                    type='submit'
+                  >
+                    Submit
+                  </Button>
+                </Form>
               )}
-            </FormControl>
-            )
+            </Formik>
           </VStack>
         </Grid>
       </Box>

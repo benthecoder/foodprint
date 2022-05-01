@@ -7,6 +7,7 @@ import {
   Text,
   VStack,
   Link,
+  Center,
 } from '@chakra-ui/react';
 import { Formik, Form, Field } from 'formik';
 import { useToast } from '@chakra-ui/react';
@@ -43,11 +44,11 @@ function Subscribe() {
   return (
     <>
       <Navbar />
-      <VStack>
-        <Text mt={100} fontSize='6xl'>
+      <VStack textAlign='center'>
+        <Text mt={100} fontSize={{ base: 'md', sm: '2xl', md: '8xl' }}>
           Subscribe for daily updates
         </Text>
-        <Text fontSize='2xl'>
+        <Text fontSize={{ base: 'xs', sm: 'md', md: '2xl' }}>
           Every day, we'll send you green recipes so that your every meal is
           environmentally friendly
         </Text>
